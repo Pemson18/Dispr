@@ -1670,20 +1670,17 @@
 
 
 
-
 document.onkeydown = KeyPress;
+
 
 function KeyPress(event) {
 
 
-    if (window.event.keyCode == 90) {
+    if (event.keyCode == 18) {
 
-        $(document).on("click", function(event) {
+        $(document).one("click", function(event) {
             event.preventDefault();
             $(event.target).hide();
-
-
-            console.log(event);
 
         });
     }
